@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -16,4 +16,84 @@
     {}
   </h2>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Submission</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      form {
+        display: flex !important;
+        gap: 5px;
+        flex-direction: column;
+        width: 500px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+
+      input[type="url"],
+      button {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+        
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <form action="/url-sortner" method="post">
+        <label for="longUrl">Enter a long URL:</label>
+        <input type="url" id="longUrl" name="longUrl" required />
+        <button type="submit">Shorten URL</button>
+      </form> -->
+      <form action="/url-sortner" method="post">
+        <label for="name">Enter a long URL:</label><br />
+        <input type="url" id="longUrl" name="longUrl" required /><br />
+
+        <button type="submit">Shorten URL</button>
+      </form>
+    </div>
+  </body>
 </html>
