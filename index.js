@@ -38,7 +38,7 @@ app.post("/url-sortner", function (req, res) {
   //----------------------------------------------------
   res.json({
     success: true,
-    url: `http://localhost:${port}/` + short_url,
+    url: `https://url-shortner-dwhp.onrender.com/` + short_url,
     massage: "Above URL is shorted, you can use it !",
   });
 });
