@@ -7,7 +7,7 @@ const path = require("path");
 const filePath = path.join(__dirname, "url_map.json");
 const file_html = path.join(__dirname, "index.html");
 const app = express();
-const port = 5000;
+const port = 10000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
